@@ -1,3 +1,4 @@
+-- REVIEW:
 -- Given a table named student_grades with columns student_id, subject, and grade, write a SQL query to find the average grade for each subject. 
   -- If a student has a missing grade in a subject, consider it as 'N/A' in the result.
 
