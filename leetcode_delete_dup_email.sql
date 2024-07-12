@@ -1,0 +1,9 @@
+-- https://leetcode.com/problems/delete-duplicate-emails/
+
+--# DELETE FROM PERSON
+--# WHERE ID NOT IN (SELECT MIN(PID) FROM PERSON GROUP BY EMAIL)
+--
+--# DELETE FROM PERSON B WHERE B.ID NOT IN (SELECT MIN(A.ID) FROM PERSON A GROUP BY A.EMAIL)
+
+
+DELETE A FROM PERSON A, PERSON B WHERE A.id > B.id and a.email = b.email

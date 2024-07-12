@@ -1,0 +1,2 @@
+-- https://leetcode.com/problems/managers-with-at-least-5-direct-reports/description/
+select e1.name from employee e, employee e1 where e1.id = e.managerid group by e.managerid having count(e.managerid) >= 5
